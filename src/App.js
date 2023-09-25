@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import { LanguageProvider } from "./context/LanguageContext";
+import Navbar from './components/navbar/Navbar';
+import Menu from "./components/menu/Menu";
+import Landing from "./pages/landing/Landing";
+import About1 from "./pages/about1/About1";
+import About2 from "./pages/about2/About2";
+import Stack from "./pages/stack/Stack";
+import Projects from "./pages/projects/Projects";
+import Contact from "./pages/contact/Contact";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        <Navbar openMenu={toggleMenu}/>
+        {isMenuOpen && <Menu closeMenu={toggleMenu} />}
+        <div className='section-container'>
+          <Landing/>
+          <About1/>
+          <About2/>
+          <Stack/>
+          <Projects/>
+          <Contact/>
+        </div>
+      </div>
+    </LanguageProvider>
   );
 }
 
