@@ -2,7 +2,7 @@ import React from 'react'
 import "./landing.css";
 function Landing() {
   return (
-    <section className="landing" id='landing'>
+    <section className="landing page" id='landing'>
       <p>Landing</p>
     </section>
   )

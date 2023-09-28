@@ -3,8 +3,8 @@ import React from 'react'
 
 function Projects() {
   return (
-    <section className="projects">
-      
+    <section className="projects page" id='projects'>
+      <p>projects</p>
     </section>
   )
 }

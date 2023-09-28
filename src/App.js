@@ -16,7 +16,7 @@ function App() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+  
   return (
     <LanguageProvider>
       <div className="App">

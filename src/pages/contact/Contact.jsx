@@ -3,8 +3,8 @@ import React from 'react'
 
 function Contact() {
   return (
-    <section className="contact">
-      
+    <section className="contact page" id='contact'>
+      <p>contact</p>
     </section>
   )
 }

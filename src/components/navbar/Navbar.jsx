@@ -9,7 +9,7 @@ function Navbar({openMenu}) {
   return (
 
     <header className='navbar'>
-      <a href="#landing" aria-label={language === "es"? "Ir a la página de inicio" : "Go to Intro"}>Carlos Eduardo Gutiérrez Sánchez</a>
+      <a href="#landing" aria-label={language === "es"? "Ir a inicio" : "Go to intro"}>Carlos Eduardo Gutiérrez Sánchez</a>
       <ul className="links">
         <li><a href="tel:+15714362731" aria-label={language==="es"? "Llamar al teléfono" : "Call to phone"}>+1(571)436 2731</a></li>
         <li>/</li>

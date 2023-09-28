@@ -1,19 +1,26 @@
 .modal{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    z-index: 300;
-    background-color: #0000007d ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 300;
+  background-color: #0000007d ;
 }
 .nav-menu{
-    height: 100vh;
-    width: fit-content;
-    z-index: 350;
-    position: absolute;
-    right: 0;
-    background-color: #FFFFFF;
+  height: 100vh;
+  width: 500px;
+  z-index: 350;
+  position: absolute;
+  right: 0;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+}
+.nav-menu>section{
+  width: 60%;
 }
 .material-symbols-outlined {
   font-variation-settings:
@@ -21,4 +28,54 @@
   'wght' 500,
   'GRAD' 200,
   'opsz' 48
+}
+.buttons-section{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons-section>button{
+  margin:0;
+}
+.lang-btn>button{
+  font-family: "Montserrat",sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
+}
+.lang-btn>.lang-selection{
+  font-weight: 700;
+}
+.nav-list{
+  height: 50vh;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
+  justify-content: space-between;
+}
+li{
+  list-style: none;
+}
+li>a{
+  text-decoration: none;
+  font-family: "Montserrat",sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+.item-active{
+  color:#952323;
+}
+.linkedIn-link{
+  margin-bottom: 50px;
+}
+.linkedIn-link img{
+  height: 40px;
 }
