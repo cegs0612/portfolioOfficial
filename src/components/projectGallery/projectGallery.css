@@ -65,7 +65,7 @@
     max-width: 35vw;
     max-height: 80%;
 }
-.project-calltoaction>button{
+.project-calltoaction>a{
     background: #A3C3A0;
     border-radius: 15px;
     font-family: 'Montserrat';
@@ -77,8 +77,9 @@
     padding: 10px;
     border-style: ridge;
     border-color: #FFFFFF;
+    text-decoration: none;
 }
-.project-calltoaction>button:hover{
+.project-calltoaction>a:hover{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .slide-bar{
@@ -103,15 +104,18 @@
     height: 4vh;
     width: 4vh;
     border-radius: 100%;
-    background-color: #952323;
+    background-color: transparent;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 2vh;
-    color: #FFFFFF;
-    border-style: ridge;
-    border-color: #FFFFFF;
+    color:  #952323;
+    border-style: none;
 }
 .slide-bar>button:hover{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color:  #952323;
+    color: #FFFFFF;
+    border-style: ridge;
+    border-color: #FFFFFF;
 }

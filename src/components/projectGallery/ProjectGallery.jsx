@@ -40,8 +40,12 @@ function ProjectGallery({projectData}) {
                   </section>
                   <section className="project-calltoaction">
                     <img src={projectData.images[0].src} alt={projectData.images[0].alt} />
-                    {language==="en"&&<button>visit the project</button>}
-                    {language==="es"&&<button>visita el projecto</button>}
+                    {language==="en"&&<a 
+                      href={projectData.projectURL}
+                      target='_blank' 
+                      rel="noopener noreferrer" 
+                      >visit the project</a>}
+                    {language==="es"&&<a href={projectData.projectURL}>visita el projecto</a>}
                   </section>
                 </div>
                 {projectData.images.map((image, index)=>{
@@ -54,11 +58,17 @@ function ProjectGallery({projectData}) {
               <div className="slide-bar">
                 <button onClick={prevSlide}>&lt;</button>
 
-                <div className={currentSlide===0? "circle-tab ct-active":"circle-tab"} key={"ct"+0}></div>
+                <div 
+                  className={currentSlide===0? "circle-tab ct-active":"circle-tab"} 
+                  key={"ct"+0}
+                  ></div>
 
                 {projectData.images.map((_, index)=>{
                   return(
-                  <div className={currentSlide===index+1? "circle-tab ct-active":"circle-tab"} key={"ct"+(index+1)}></div>)
+                  <div 
+                    className={currentSlide===index+1? "circle-tab ct-active":"circle-tab"} 
+                    key={"ct"+(index+1)}
+                    ></div>)
                 })}
 
                 <button onClick={nextSlide}>&gt;</button>
