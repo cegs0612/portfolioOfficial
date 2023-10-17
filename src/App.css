@@ -16,3 +16,20 @@
     justify-content: center;
     align-items: center;
   }
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar-track {
+    background: #DAD4B5;
+}
+
+::-webkit-scrollbar-thumb {
+background: #a7312180;
+border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a73121;
+}

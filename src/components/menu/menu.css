@@ -29,15 +29,30 @@
   'GRAD' 200,
   'opsz' 48
 }
-.buttons-section{
+.nav-menu .buttons-section{
   margin-top: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 60%;
 }
-.buttons-section>button{
+.buttons-section button{
   margin:0;
+  height: auto;
+  width: fit-content;
+  background-color: transparent;
+  border: none;
+}
+.buttons-section button:hover{
+  cursor: pointer;
+}
+.lang-btn{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .lang-btn>button{
   font-family: "Montserrat",sans-serif;
@@ -51,7 +66,7 @@
 .nav-list{
   height: 50vh;
 }
-ul{
+.nav-menu ul{
   padding: 0;
   margin: 0;
   height: 100%;
@@ -60,17 +75,17 @@ ul{
   align-items:baseline;
   justify-content: space-between;
 }
-li{
+.nav-menu li{
   list-style: none;
 }
-li>a{
+.nav-menu li>a{
   text-decoration: none;
   font-family: "Montserrat",sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: black;
 }
-.item-active{
+.nav-menu .item-active{
   color:#952323;
 }
 .linkedIn-link{
@@ -79,3 +94,4 @@ li>a{
 .linkedIn-link img{
   height: 40px;
 }
+
