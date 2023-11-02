@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 2px #F2E8C6;
+    background-color: transparent;
+}
+.navbar>a{ 
+    font-family: 'Pacifico', cursive;
+    font-size: 1.953125vh;
+    margin-left: 2vw;
+    text-decoration: none;
+    color: black;
+    z-index: 205;
+}
+.navbar>button{
+    height: auto;
+    width: fit-content;
+    margin-right: 2vw;
+    background-color: transparent;
+    border: none;
+    z-index: 205;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 200,
+    'opsz' 48
+}

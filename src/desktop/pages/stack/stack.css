@@ -1,0 +1,110 @@
+.stack{
+    background-color: #FFFFFF;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+.stack>.rectangle{
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #A73121;
+}
+.stack>.circle1{
+    width: 200px;
+    height: 200px;
+    background-color: #DAD4B5;
+    opacity: 0.5;
+    border-radius: 100%;
+    position: absolute;
+    left: calc(100vw - 150px);
+    top: calc(30vh - 100px);
+    z-index: 0;
+}
+.stack h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0;
+    position: absolute;
+    left: 50px;
+    top: 10vh;
+}
+.left {
+    position: absolute;
+    top: 20vh;
+    left: 50px;
+    width: calc(50vw - 100px);
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.left>.stack-card{
+    width: 46.9vh;
+    height: 21.5vh;
+    border-width: 0px 2px 2px 0px;
+    border-style: solid;
+    border-color: #F2E8C6;
+    box-shadow:  0px 2px 10px  #F2E8C6;
+    border-radius: 20px 20px 50px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4%;
+}
+.left>.first{
+    align-self: flex-start;
+}
+.left>.second{
+    align-self: center;
+}
+.left>.third{
+    align-self: flex-end;
+}
+.left>.stack-card>img{
+    height: 37%;
+}
+.left>.stack-card>h5{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.918vh;
+    line-height: 3.90625vh;
+    color: #FFFFFF;
+    max-width: 160px;
+    text-align:center;
+    padding: 1%;
+}
+.stack-card>ul{
+    padding: 0;
+}
+.stack-card>ul>li{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4414vh;
+    line-height: 2.93vh;
+    color: #FFFFFF;
+    list-style: none;
+}
+.right{
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right img{
+    height: 56.25vh;
+}

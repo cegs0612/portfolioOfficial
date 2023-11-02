@@ -1,35 +1,50 @@
 import './App.css';
-import React, { useState } from 'react';
+import Axios from "axios";
+import React, { useEffect } from 'react';
 import { LanguageProvider } from "./context/LanguageContext";
-import Navbar from './components/navbar/Navbar';
-import Menu from "./components/menu/Menu";
-import Landing from "./pages/landing/Landing";
-import About1 from "./pages/about1/About1";
-import About2 from "./pages/about2/About2";
-import Stack from "./pages/stack/Stack";
-import Projects from "./pages/projects/Projects";
-import Contact from "./pages/contact/Contact";
-
+import useWindowDimentions from "./hooks/useWindowDimentions";
+import Desktop from "./desktop/Desktop";
+import Phone from "./phone/Phone";
 function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const windowWidth = useWindowDimentions();
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  //sends data to the backend
+  const sendData = async (date, position, error)=>{
+    const data = {
+      date,
+      position,
+      error
+    };
+    Axios.post('http://localhost:3001/',data)
+      .then(console.log("."))
+      .catch(err=>console.log("."))
+  }
+  
+  //gest user current location
+  useEffect(() => {
+    const date = new Date();
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        const { latitude, longitude } = position.coords;
+        const positionData = {
+          latitude : latitude,
+          longitude : longitude
+        };
+        sendData(date.toString(),positionData,null)
+      }, (error) => {
+        const err = ['Error al obtener la ubicación:', error]
+        sendData(date.toString(), null, err)
+      });
+    } else {
+      sendData(date.toString(), null,'Geolocation no está soportado en este navegador.');
+    }
+  }, [])
+  
   
   return (
     <LanguageProvider>
       <div className="App">
-        <Navbar openMenu={toggleMenu}/>
-        {isMenuOpen && <Menu closeMenu={toggleMenu} />}
-        <div className='section-container'>
-          <Landing/>
-          <About1/>
-          <About2/>
-          <Stack/>
-          <Projects/>
-          <Contact/>
-        </div>
+        {windowWidth >= 850? <Desktop /> : <Phone />}
       </div>
     </LanguageProvider>
   );

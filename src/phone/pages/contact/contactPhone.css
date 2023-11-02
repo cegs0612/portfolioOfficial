@@ -1,0 +1,143 @@
+.contact-phone{
+    min-height: 101vh;
+    width: 100vw;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.contact-phone-bc{
+    width: 101vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contact-phone-bc>.circle1-contact-phone{
+    width: 100px;
+    height: 100px;
+    background-color: #A73121;
+    border-radius: 100%;
+    position: absolute;
+    right: -30px;
+    top: 9vh;
+    z-index: 0;
+}
+.contact-phone-bc>.circle2-contact-phone{
+    width: 100vw;
+    height: 100vw;
+    background-color: #F2E8C680;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.contact-phone>.content-contact-phone{
+    z-index: 10;
+    height: fit-content;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content-contact-phone h2{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.84vh;
+    line-height: 8.2vh;
+    color: #DAD4B5;
+    margin: 9vh 0 0 2vw;
+}
+.content-contact-phone>form{
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 2vw;
+}
+.content-contact-phone>form>label,.content-contact-phone>form>input,.content-contact-phone>form>textarea{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.95vh;
+    line-height: 2.44vh;
+    color: #000000;
+}
+.content-contact-phone>form>input{
+    border:none;
+    border-bottom: #000000 solid 1px;
+    height: 4.88vh;
+    margin-bottom: 1vh;
+}
+.content-contact-phone>form>textarea{
+    border: none;
+    border-bottom: #000000 solid 1px;
+    resize: none;
+    margin-bottom: 2vh;
+}
+.content-contact-phone>form>.submit-btn-phone{
+    background: #A3C3A0;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.44vh;
+    line-height: 2.92vh;
+    color: #FFFFFF;
+    align-self: center;
+    padding: 2px 25px 2px 25px;
+}
+.content-contact-phone>form>.submit-btn-phone:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contact-info-phone{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5vh 0;
+}
+.contact-info-phone h3{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vh;
+    line-height: 2.44vh;
+    color: #952323;
+    margin: 3vw;
+}
+.contact-info-phone a{
+    text-decoration: none;
+}
+.contact-info-phone>.phone{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.9vh;
+    line-height: 4.7851vh;
+    color: #000000;
+    margin: 3vw;
+}
+.contact-info-phone>.email{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.93vh;
+    line-height: 3.61vh;
+    color: #A73121;
+    margin: 3vw;
+}
+.contact-phone>.sending-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 500;
+    background-color: #0000007d ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

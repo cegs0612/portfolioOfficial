@@ -1,0 +1,145 @@
+.about-phone{
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.about1-phone{
+    position:relative;
+    background-color: #FFFFFF;
+}
+.about2-phone{
+    position:relative;
+    background-color: #DAD4B5;
+}
+
+.about-phone .circles-about{
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.about1-phone>.circles-about>.circle1-about{
+    width: 100px;
+    height: 100px;
+    background-color: #A7312180;
+    border-radius: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 9vh;
+    right: -30px;
+}
+.circles-about>.circle2-about{
+    background-color: #DAD4B5;
+    height: 100vw;
+    width: 100vw;
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+}
+.about-phone-foreground{
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+}
+.about-phone-foreground>.text-about1{
+    position: relative;
+    width: 100vw;
+    top: 3vh;
+    left: 0;
+}
+.text-about1 h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    margin: 8vh 0 2vh 2vh;
+}
+.text-about1 p{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.953125vh;
+    line-height: 2.93vh;
+    margin: 0;
+}
+.about-phone .paragraph-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1vh;
+}
+.about-text-phone-bc,.about2-text-phone-bc{
+    width: 90vw;
+    background-color: rgba(242, 232, 198, 0.3) ;
+    border-radius: 25px;
+    padding: 1vw 1vh;
+}
+.about-phone-foreground>img{
+    position: absolute;
+    width: 80vw;
+    z-index: 50;
+    bottom: 0;
+    left: 0;
+}
+.about2-phone>.circles-about>.circle1-about{
+    background-color: transparent;
+    height: 100vw;
+    width: 100vw;
+    border-radius: 0 0 100% 0;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 0 1vw 1vw 0;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+}
+.about2-phone>.circles-about>.circle2-about{
+    width: 100px;
+    height: 100px;
+    background-color: #A7312180;
+    border-radius: 100%;
+    z-index: 0;
+    position: absolute;
+    bottom: 9vh;
+    right: -30px;
+}
+.about2-phone-text{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about2-text-phone-bc{
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1vh 1vw;
+    margin-top: 2vh; 
+    margin-bottom: 2vh;
+}
+.about2-phone-text h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-weight: 700;
+    font-size: 3vh;
+    line-height: 3vh;
+    color: #000000;
+    margin: 0;
+}
+.about2-phone-text p,.about2-phone-text li{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.953125vh;
+    line-height: 2.93vh;
+    color: #000000;
+    margin: 0;
+}
