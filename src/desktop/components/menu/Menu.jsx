@@ -87,7 +87,6 @@ function Menu({closeMenu}) {
   //sets the current section to the state
   useEffect(() => {
     setMenuActiveItem(currentSection)
-    console.log(currentSection)
   }, [currentSection])
 
   //handles the close Menu scenarios

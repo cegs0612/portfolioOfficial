@@ -193,6 +193,38 @@ export const projectsDataEng = [
             },
         ],
         projectURL: 'https://control-ventas-app.onrender.com/'
+    },
+    {
+        title: 'Current Portfolio',
+        stack: 'ReactJS - NodeJS - Express - MongoDB',
+        description: [
+            "This project is a single-page application developed with the MERN stack, where my main goal was to enhance the visual aspects compared to the previous version. To achieve this, I designed my own mockup using Figma and Photopea as visual editing tools.",
+            "Regarding the frontend, I chose ReactJS as the main technology, utilizing Axios for communication with the backend and FramerMotion to add a layer of animations. In addition to being a responsive application that works on both desktop and mobile environments, I added the functionality to send data to the backend about the date and location from which the page is accessed. It also allows users to submit a contact form.",
+            "As for the backend, I used NodeJS and Express, keeping it straightforward. It has only two routes: one to handle data received about the date and access location, and the other to manage messages received from the contact form. I used Mongoose to handle the database, where data about the date, location, and contact form submissions are stored. Additionally, I employed Nodemailer to send email notifications with the same data to my personal address. Furthermore, I utilized environment variables to protect sensitive data."
+        ],
+        objectives:[
+            'Implement MERN Stack technologies.',
+            'Develop a visually appealing web application.',
+            'Store data about the date and location of access to the application.',
+            'Send email notifications through the backend.'
+        ],
+        keyLearnings:"During the development of this application, I learned to handle design and visual editing software and to send automated emails from the backend.",
+        notes:null,
+        images:[
+            {
+                src:"/img/project6/p6image1.png",
+                alt:"portfolio landing page mockup"
+            },
+            {
+                src:"/img/project6/p6image2.png",
+                alt:"portfolio project section mockup"
+            },
+            {
+                src:"/img/project6/p6image3.png",
+                alt:"portfolio contact section mockup"
+            }
+        ],
+        projectURL: null
     }
 ]
 
@@ -394,4 +426,36 @@ export const projectsDataSpa = [
         ],
         projectURL: 'https://control-ventas-app.onrender.com/'
     },
+    {
+        title: 'Current Portfolio',
+        stack: 'ReactJS - NodeJS - Express - MongoDB',
+        description: [
+            "Este proyecto es una aplicación de una sola página desarrollada con el stack MERN, en la que mi objetivo principal fue mejorar los aspectos visuales respecto a la anterior versión. Para lograrlo diseñé mi propio mockup usando Figma y Photopea como herramientas de edición visual.",
+            "Respecto al frontend, elegí ReactJS como tecnología principal, utilizando Axios para la comunicación con el backend y FramerMotion para agregar una capa de animaciones. Además de ser una aplicación responsiva que funciona tanto en ambientes de escritorio como de teléfonos móviles y tablets; agregué la funcionalidad de enviar al backend los datos de la fecha y ubicación desde la que se accede a la página. También permite al usuario el envío de un formulario de contacto.",
+            "En cuanto al backend, utilicé NodeJS y Express y lo mantuve simple. Tiene solo dos rutas, una para manejar los datos recibidos de la fecha y ubicación de acceso y la otra para manejar el mensaje recibido desde el formulario de contacto. Utilicé Mongoose para el manejo de la base de datos, en la que se guardan los datos tanto de la fecha y ubicación, como del formulario de contacto. Por otro lado, utilicé Nodemailer, para enviar un correo de notificación con los mismos datos a mi dirección personal. Además, utilicé variables de entorno para proteger los datos confidenciales."
+        ],
+        objectives:[
+            'Aplicar tecnologías del stack MERN.',
+            'Desarrollar una aplicación web visualmente atractiva.',
+            'Almacenar datos de la fecha y lugar de acceso a la aplicación.',
+            'Enviar notificaciones por correo electrónico mediante el backend.'
+        ],
+        keyLearnings:"Durante el desarrollo de esta aplicación aprendí a manejar software de diseño y edición visual y a enviar correos electrónicos automatizados desde el backend.",
+        notes:null,
+        images:[
+            {
+                src:"/img/project6/p6image1.png",
+                alt:"portfolio landing page mockup"
+            },
+            {
+                src:"/img/project6/p6image2.png",
+                alt:"portfolio project section mockup"
+            },
+            {
+                src:"/img/project6/p6image3.png",
+                alt:"portfolio contact section mockup"
+            }
+        ],
+        projectURL: null
+    }
 ]

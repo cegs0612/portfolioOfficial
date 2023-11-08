@@ -15,9 +15,10 @@ function App() {
       position,
       error
     };
-    Axios.post('http://localhost:3001/',data)
-      .then(console.log("."))
-      .catch(err=>console.log("."))
+    
+    Axios.post('https://portfoliobackend-5km0.onrender.com',data)
+    .then(console.log("."))
+    .catch(err=>console.log("."))
   }
   
   //gest user current location
@@ -32,7 +33,7 @@ function App() {
         };
         sendData(date.toString(),positionData,null)
       }, (error) => {
-        const err = ['Error al obtener la ubicación:', error]
+        const err = ['Error al obtener la ubicación:', {code:error.code,message:error.message}]
         sendData(date.toString(), null, err)
       });
     } else {

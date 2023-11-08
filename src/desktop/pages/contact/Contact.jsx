@@ -14,7 +14,6 @@ function Contact() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setIsSending(true)
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if(!emailRegex.test(email)){
@@ -23,13 +22,16 @@ function Contact() {
       document.getElementById("email").focus();
       return
     }
+    setIsSending(true)
+    const date =  Date().toString();
     const dataMsg = {
+      date,
       name,
       email,
       message
     }
     
-    Axios.post('http://localhost:3001/message', dataMsg)
+    Axios.post('https://portfoliobackend-5km0.onrender.com/message', dataMsg)
     .then(response  =>{
       setIsSending(false)
       language === "en"?
