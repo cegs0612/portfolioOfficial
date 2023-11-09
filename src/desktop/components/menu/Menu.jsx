@@ -208,7 +208,7 @@ function Menu({closeMenu}) {
               rel="noopener noreferrer"
             >
               <motion.img 
-                src="/icons/linkedinIcon.svg" 
+                src="/portfolioOfficial/icons/linkedinIcon.svg" 
                 alt='linkedin icon'
                 className='imgLinkedIn'
                 whileHover={{scale:1.5}}

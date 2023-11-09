@@ -43,7 +43,7 @@ const {language} = useContext(LanguageContext)
         whileInView={{clipPath:"circle(75% at 75% 75%)"}}
         transition={{type:'spring',duration:1.5, bounce:0}}
       ></motion.div>     
-      <img src="%PUBLIC_URL%/img/landingImage.png" alt={language=== 'en' ? textLanding.english.imgAlt : textLanding.spanish.imgAlt} className="img-landing" />
+      <img src="/portfolioOfficial/img/landingImage.png" alt={language=== 'en' ? textLanding.english.imgAlt : textLanding.spanish.imgAlt} className="img-landing" />
       <motion.div 
         className="text-container"
         initial={{scale:0.7}}

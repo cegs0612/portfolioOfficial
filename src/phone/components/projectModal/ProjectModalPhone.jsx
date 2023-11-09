@@ -76,7 +76,7 @@ function ProjectModalPhone({projectData,closeModal}) {
               return(
                 <motion.img 
                   key={'img'+index}
-                  src={image.src}
+                  src={'/portfolioOfficial'+image.src}
                   alt={image.alt} 
                   initial={{scale:0, opacity:0}}
                   whileInView={{scale:1, opacity:1}}

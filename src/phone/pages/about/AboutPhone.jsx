@@ -81,7 +81,7 @@ function AboutPhone() {
             </motion.div>            
           </div>}
           </div>
-          <img src="/img/aboutImage.png" alt={language=== 'en' ? "Carlos Gutiérrez image" : "Imagen de Carlos Gutiérrez"}/>
+          <img src="/portfolioOfficial/img/aboutImage.png" alt={language=== 'en' ? "Carlos Gutiérrez image" : "Imagen de Carlos Gutiérrez"}/>
         </div>
       </div>
       <div className="about2-phone">

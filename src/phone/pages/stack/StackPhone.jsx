@@ -17,7 +17,7 @@ function StackPhone() {
         <h2>Tech Stack</h2>
         <div className="img-container-stack-phone">
           <motion.img 
-            src="/img/stackImage.png" 
+            src="/portfolioOfficial/img/stackImage.png" 
             alt={language === 'en' ? "Tech Stack collection" : "colección de tecnologías"} 
             initial={{opacity:0}}
             whileInView={{opacity:1}}
@@ -32,7 +32,7 @@ function StackPhone() {
         transition={{type:'spring',duration:1.5, bounce:0}}
       >
         <div className="stack-card-phone">
-          <img src="/img/stackFrontEndImage.png" alt={language === 'en' ? "front end icon" : "ícono de front end"} />
+          <img src="/portfolioOfficial/img/stackFrontEndImage.png" alt={language === 'en' ? "front end icon" : "ícono de front end"} />
           <h5>Front End</h5>
           <ul>
             <li>HTML</li>
@@ -42,7 +42,7 @@ function StackPhone() {
           </ul>
         </div>
         <div className="stack-card-phone">
-          <img src="/img/stackBackEndImage.png" alt={language === 'en' ? "back end icon" : "ícono de back end"} />
+          <img src="/portfolioOfficial/img/stackBackEndImage.png" alt={language === 'en' ? "back end icon" : "ícono de back end"} />
           <h5>Back End</h5>
           <ul>
             <li>Node JS</li>
@@ -50,7 +50,7 @@ function StackPhone() {
           </ul>
         </div>
         <div className="stack-card-phone">
-          <img src="/img/stackDBImage.png" alt={language === 'en' ? "database icon" : "ícono de base de datos"} />
+          <img src="/portfolioOfficial/img/stackDBImage.png" alt={language === 'en' ? "database icon" : "ícono de base de datos"} />
           <h5>Database Management</h5>
           <ul>
             <li>MySQL</li>

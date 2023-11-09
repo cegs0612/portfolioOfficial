@@ -47,7 +47,7 @@ function About1() {
       <motion.div className="circle sc sc5" variants={circleVariants} initial="hidden" whileInView="visible" transition="transition"></motion.div>
       {language === 'en' && <h2>About Me</h2>}
       {language === 'es' && <h2>Sobre mí</h2>}
-      <img src="%PUBLIC_URL%/img/aboutImage.png" alt={language=== 'en' ? "Carlos Gutiérrez image" : "Imagen de Carlos Gutiérrez"}/>
+      <img src="/portfolioOfficial/img/aboutImage.png" alt={language=== 'en' ? "Carlos Gutiérrez image" : "Imagen de Carlos Gutiérrez"}/>
       <div className="text">
         <motion.div variants={divVariants} initial="hidden" whileInView="visible" transition="transition">
           <p>{language==='en'? text.english.p1 : text.spanish.p1}</p>

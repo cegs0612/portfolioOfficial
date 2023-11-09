@@ -206,7 +206,7 @@ function MenuPhone({closeMenu}) {
             target='_blank' 
             rel="noopener noreferrer"
           >
-            <img src="/icons/linkedinIcon.svg" alt='linkedin icon' />
+            <img src="/portfolioOfficial/icons/linkedinIcon.svg" alt='linkedin icon' />
           </a>
         </motion.section>
       </motion.nav>

@@ -46,7 +46,7 @@ function LandingPhone() {
         transition={{type:'spring',duration:1.5, bounce:0}}
       ></motion.div>     
       <img 
-        src="/img/landingImage.png" 
+        src="/portfolioOfficial/img/landingImage.png" 
         alt={language=== 'en' ? textLanding.english.imgAlt : textLanding.spanish.imgAlt} 
         className="img-landing" />
     </section>

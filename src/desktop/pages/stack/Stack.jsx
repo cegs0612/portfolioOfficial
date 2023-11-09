@@ -33,7 +33,7 @@ function Stack() {
         transition={{type:'spring',duration:2}}
       >
         <div className="stack-card first">
-          <img src="%PUBLIC_URL%/img/stackFrontEndImage.png" alt={language === 'en' ? "front end icon" : "ícono de front end"} />
+          <img src="/portfolioOfficial/img/stackFrontEndImage.png" alt={language === 'en' ? "front end icon" : "ícono de front end"} />
           <h5>Front End</h5>
           <ul>
             <li>HTML</li>
@@ -43,7 +43,7 @@ function Stack() {
           </ul>
         </div>
         <div className="stack-card second">
-        <img src="%PUBLIC_URL%/img/stackBackEndImage.png" alt={language === 'en' ? "back end icon" : "ícono de back end"} />
+        <img src="/portfolioOfficial/img/stackBackEndImage.png" alt={language === 'en' ? "back end icon" : "ícono de back end"} />
           <h5>Back End</h5>
           <ul>
             <li>Node JS</li>
@@ -51,7 +51,7 @@ function Stack() {
           </ul>
         </div>
         <div className="stack-card third">
-        <img src="%PUBLIC_URL%/img/stackDBImage.png" alt={language === 'en' ? "database icon" : "ícono de base de datos"} />
+        <img src="/portfolioOfficial/img/stackDBImage.png" alt={language === 'en' ? "database icon" : "ícono de base de datos"} />
           <h5>Database Management</h5>
           <ul>
             <li>MySQL</li>
@@ -63,7 +63,7 @@ function Stack() {
       </motion.div>
       <div className="right">
         <motion.img 
-          src="%PUBLIC_URL%/img/stackImage.png" 
+          src="/portfolioOfficial/img/stackImage.png" 
           alt={language === 'en' ? "Tech Stack collection" : "colección de tecnologías"}
           initial={{opacity:0}}
           whileInView={{opacity:1}}

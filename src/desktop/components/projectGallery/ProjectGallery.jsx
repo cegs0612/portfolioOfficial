@@ -53,7 +53,7 @@ function ProjectGallery({projectData}) {
             </>}
           </section>
           <section className="project-calltoaction">
-            <img src={projectData.images[0].src} alt={projectData.images[0].alt} />
+            <img src={'/portfolioOfficial'+projectData.images[0].src} alt={projectData.images[0].alt} />
             {projectData.projectURL!==null && <motion.a
               href={projectData.projectURL}
               target='_blank' 
@@ -73,7 +73,7 @@ function ProjectGallery({projectData}) {
             whileInView={{scale:1, opacity:1}}
             transition={{type:'spring', duration:1.5}}
           >
-            <img src={image.src} alt={image.alt} /> 
+            <img src={'/portfolioOfficial'+image.src} alt={image.alt} /> 
           </motion.div>)
         })}
       </div>
