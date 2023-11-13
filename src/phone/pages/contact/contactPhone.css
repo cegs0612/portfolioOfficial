@@ -1,21 +1,22 @@
 .contact-phone{
-    min-height: 101vh;
+    
     width: 100vw;
     background-color: #FFFFFF;
     position: relative;
     z-index: 0;
     overflow: hidden;
+    display: block;
 }
-.contact-phone-bc{
-    width: 101vw;
-    min-height: 100vh;
-    object-fit: cover;
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
+.top>h2{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.84vh;
+    line-height: 8.2vh;
+    color: #DAD4B5;
+    margin: 9vh 0 0 2vw;
 }
-.contact-phone-bc>.circle1-contact-phone{
+.circle1-contact-phone{
     width: 100px;
     height: 100px;
     background-color: #A73121;
@@ -25,37 +26,12 @@
     top: 9vh;
     z-index: 0;
 }
-.contact-phone-bc>.circle2-contact-phone{
-    width: 100vw;
-    height: 100vw;
-    background-color: #F2E8C680;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-.contact-phone>.content-contact-phone{
-    z-index: 10;
-    height: fit-content;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.content-contact-phone h2{
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 6.84vh;
-    line-height: 8.2vh;
-    color: #DAD4B5;
-    margin: 9vh 0 0 2vw;
-}
-.content-contact-phone>form{
+.contact-phone>form{
     display: flex;
     flex-direction: column;
-    margin: 5vh 2vw;
+    margin: 15vh 2vw 0;
 }
-.content-contact-phone>form>label,.content-contact-phone>form>input,.content-contact-phone>form>textarea{
+.contact-phone>form>label,.contact-phone>form>input,.contact-phone>form>textarea{
     font-family: 'Merriweather';
     font-style: normal;
     font-weight: 400;
@@ -63,19 +39,19 @@
     line-height: 2.44vh;
     color: #000000;
 }
-.content-contact-phone>form>input{
+.contact-phone>form>input{
     border:none;
     border-bottom: #000000 solid 1px;
     height: 4.88vh;
     margin-bottom: 1vh;
 }
-.content-contact-phone>form>textarea{
+.contact-phone>form>textarea{
     border: none;
     border-bottom: #000000 solid 1px;
     resize: none;
     margin-bottom: 2vh;
 }
-.content-contact-phone>form>.submit-btn-phone{
+.contact-phone>form>.submit-btn-phone{
     background: #A3C3A0;
     border: none;
     border-radius: 15px;
@@ -88,16 +64,17 @@
     align-self: center;
     padding: 2px 25px 2px 25px;
 }
-.content-contact-phone>form>.submit-btn-phone:hover{
+.contact-phone>form>.submit-btn-phone:hover{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .contact-info-phone{
-    position: relative;
+    position: block;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 5vh 0;
+    margin-top: 15vh;
+    padding-left: 5vw;
 }
 .contact-info-phone h3{
     font-family: 'Merriweather';
@@ -107,6 +84,7 @@
     line-height: 2.44vh;
     color: #952323;
     margin: 3vw;
+    z-index: 10;
 }
 .contact-info-phone a{
     text-decoration: none;
@@ -119,6 +97,7 @@
     line-height: 4.7851vh;
     color: #000000;
     margin: 3vw;
+    z-index: 10;
 }
 .contact-info-phone>.email{
     font-family: 'Montserrat';
@@ -128,6 +107,16 @@
     line-height: 3.61vh;
     color: #A73121;
     margin: 3vw;
+    z-index: 10;
+}
+.circle2-contact-phone{
+    width: 80vw;
+    height: 80vw;
+    background-color: #F2E8C680;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
 }
 .contact-phone>.sending-modal{
     position: fixed;

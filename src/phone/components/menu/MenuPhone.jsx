@@ -102,28 +102,28 @@ function MenuPhone({closeMenu}) {
   useEffect(() => {
     const exitAnimation = async()=>{
       await animate("section",{opacity:0})
-      await animate(scope.current, {clipPath:"circle(1px at 80% 5%)"})
+      await animate(scope.current, {opacity:0 , left: "100%"})
       closeMenu()
     }
     if(triggerUnmount)exitAnimation()  
   }, [triggerUnmount,animate,scope,closeMenu])
   
-
+  
   return (
     <AnimatePresence>
       <motion.nav 
         ref={scope}
         className='menu-phone'
-        initial={{clipPath:"circle(1px at 100% 0%)"}}
-        whileInView={{clipPath:"circle(2000px at 80% 5%)"}}
+        initial={{opacity: 0, left: '100%'}}
+        animate={{opacity:1, left:0}}
         //exit={{clipPath:"circle(1px at 80% 5%)"}}
         transition={{type:'spring', bounce:0, duration:1.5}}
       >
         <motion.section 
           className="buttons-section"
           initial={{opacity:0}}
-          whileInView={{opacity:1}}
-          transition={{type:'spring', bounce:0, duration:1, delay:0.5}}
+          animate={{opacity:1}}
+          transition={{type:'spring', bounce:0, duration:1}}
         >
           <div className="language-btns">
             <button 
@@ -150,8 +150,8 @@ function MenuPhone({closeMenu}) {
         <motion.section 
           className="nav-list"
           initial={{opacity:0}}
-          whileInView={{opacity:1}}
-          transition={{type:'spring', bounce:0, duration:1, delay:0.5}}
+          animate={{opacity:1}}
+          transition={{type:'spring', bounce:0, duration:1}}
         >
           <ul>
             {language==='en'&& textMenuEnglish.map((element, index)=>{
@@ -189,8 +189,8 @@ function MenuPhone({closeMenu}) {
         <motion.section 
           className="bottom-section"
           initial={{opacity:0}}
-          whileInView={{opacity:1}}
-          transition={{type:'spring', bounce:0, duration:1, delay:0.5}}
+          animate={{opacity:1}}
+          transition={{type:'spring', bounce:0, duration:1}}
         >
           <a 
             href="tel:+15714362731" 
