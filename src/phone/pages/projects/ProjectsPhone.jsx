@@ -18,15 +18,15 @@ function ProjectsPhone() {
             <CardPhone projectData = {element} />
           </React.Fragment>)
         })}
-        </div>}
-        {language === 'es' && <div className="projects-container-phone">
+      </div>}
+      {language === 'es' && <div className="projects-container-phone">
         {projectsDataSpa.map((element, index)=>{
           return(
           <React.Fragment key={'p'+index}>
             <CardPhone projectData = {element} />
           </React.Fragment>)
         })}
-        </div>}
+      </div>}
       <motion.div 
         className="circle-projects-phone"
         initial={{clipPath:"circle(20% at 0% 100%)"}}

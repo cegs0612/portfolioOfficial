@@ -1,11 +1,9 @@
 .projectModal-phone{
-    width: 100vw;
-    height: 90vh;
+    width: 90vw;
+    height: 100vh;
     background-color: #FFFEF7;
-    z-index: 350;
-    position: fixed;
-    top: 10vh;
-    left: 0;
+    display: block;
+    position: relative;
 }
 .projectModal-phone>.close-modal-project-phone{
     height: 5vh;

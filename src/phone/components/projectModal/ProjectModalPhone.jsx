@@ -17,13 +17,6 @@ function ProjectModalPhone({projectData,closeModal}) {
       if(triggerClose) closeProject()
     }, [triggerClose,animate,scope,closeModal])
     
-    //prevents the scroll in the body
-    useEffect(() => {
-      document.body.style.overflow = 'hidden';
-      return () => {
-        document.body.style.overflow = 'auto';
-      }
-    }, [])
 
   return (
     <motion.div 
