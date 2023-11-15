@@ -1,11 +1,13 @@
 .landing-phone{
     background-color: #FFFEF7;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 105vh;
     margin: 0;
     padding: 0;
     z-index: 0;
     position: relative;
+    display: flex;
+    overflow: hidden;
 }
 .landing-phone>.circle1-phone{
     background-color: #DAD4B5;
@@ -20,11 +22,11 @@
 }
 .landing-phone .text-container-phone{
     width: 100vw;
-    height: fit-content;
+    height: 95vh;
     z-index: 50;
     display: flex;
-    justify-content:flex-start;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     top: 10vh;
 }
@@ -58,8 +60,7 @@
     font-weight: 400;
     color: black;
     line-height:2.9296875vh;
-    height: 180px;
-    max-width: 50vw;
+    max-width: 80vw;
     margin: 0;
 }
 .landing-text-phone a{
@@ -83,13 +84,11 @@
     right: 0;
     z-index: 0;
 }
-.landing-phone .img-landing{
-    height: auto;
-    width: 70vw;
-    position: absolute;
+.landing-phone>.text-container-phone>.img-landing{
+    height: 50vh;
+    width: auto;
+   
     z-index: 10;
-    top: auto;
-    right: 0;
-    bottom: 0;
-    margin-top: 1vh;
+    position: static;
+    align-self: flex-end;
 }

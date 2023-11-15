@@ -28,7 +28,7 @@
 .contact-phone>form{
     display: flex;
     flex-direction: column;
-    margin: 15vh 2vw 0;
+    margin: 15vh 3vw 0;
 }
 .contact-phone>form>label,.contact-phone>form>input,.contact-phone>form>textarea{
     font-family: 'Merriweather';

@@ -81,7 +81,13 @@ function AboutPhone() {
             </motion.div>            
           </div>}
           </div>
-          <img src="/portfolioOfficial/img/aboutImage.png" alt={language=== 'en' ? "Carlos Gutiérrez image" : "Imagen de Carlos Gutiérrez"}/>
+          <motion.img 
+            src="/portfolioOfficial/img/aboutImage.png" 
+            alt={language=== 'en' ? "Carlos Gutiérrez image" : "Imagen de Carlos Gutiérrez"}
+            initial={{opacity:0}}
+            whileInView={{opacity:1}}
+            transition={{type:'spring',duration:1}}
+          />
         </div>
       </div>
       <div className="about2-phone">
@@ -130,8 +136,8 @@ function AboutPhone() {
             >
               <h3>Work Philosophy</h3>
               <ul>
-                <li><strong>Balance between personal and work life</strong> Prioritize a healthy balance between personal and work goals recognizing its positive impact on well-being and performance.</li>
                 <li><strong>Flexibility and adaptability.</strong> Have the ability to adapt quickly to new challenges, embracing and accepting them in work and personal environment.</li>
+                <li><strong>Balance between personal and work life</strong> Prioritize a healthy balance between personal and work goals recognizing its positive impact on well-being and performance.</li>
               </ul>
             </motion.div>
           </div>}
@@ -165,8 +171,8 @@ function AboutPhone() {
             >
               <h3>Filosofía de trabajo</h3>
               <ul>
-                <li><strong>Equilibrio entre la vida personal y laboral.</strong> Priorizar un equilibrio saludable entre las metas personales y laborales, reconociendo su impacto en el bienestar y desempeño.</li>
                 <li><strong>Flexibilidad y Adaptabilidad.</strong> Tener la capacidad de adaptarse ágilmente a nuevos desafíos y aceptarlos en el entorno laboral y personal.</li>
+                <li><strong>Equilibrio entre la vida personal y laboral.</strong> Priorizar un equilibrio saludable entre las metas personales y laborales, reconociendo su impacto en el bienestar y desempeño.</li>
               </ul>
             </motion.div>
           </div>}

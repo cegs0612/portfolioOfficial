@@ -38,17 +38,18 @@ function LandingPhone() {
           <p>{language==='en'? textLanding.english.p : textLanding.spanish.p}</p>
           <a href="#projects">{language==='en'? textLanding.english.button : textLanding.spanish.button}</a>
         </div>
+        <img 
+          src="/portfolioOfficial/img/landingImage.png" 
+          alt={language=== 'en' ? textLanding.english.imgAlt : textLanding.spanish.imgAlt} 
+          className="img-landing" 
+        />
       </div>
       <motion.div 
         className="circle2-phone"
         initial={{clipPath:"circle(20% at 75% 75%)"}}
         whileInView={{clipPath:"circle(75% at 75% 75%)"}}
         transition={{type:'spring',duration:1.5, bounce:0}}
-      ></motion.div>     
-      <img 
-        src="/portfolioOfficial/img/landingImage.png" 
-        alt={language=== 'en' ? textLanding.english.imgAlt : textLanding.spanish.imgAlt} 
-        className="img-landing" />
+      ></motion.div>         
     </section>
   )
 }

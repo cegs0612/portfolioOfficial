@@ -134,7 +134,7 @@ function Menu({closeMenu}) {
         <motion.nav 
           id='nav-menu'
           className='nav-menu'
-          initial={{opacity:0, right: -500}} 
+          initial={{opacity:0, right: "-100%"}} 
           animate={{opacity:1, right:0}}
           transition={{type:'spring',duration:2, bounce:0}}
           >
