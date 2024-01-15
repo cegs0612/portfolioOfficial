@@ -143,7 +143,7 @@ export const projectsDataEng = [
                 alt:"lost game display"
             },
         ],
-        projectURL: 'https://hangman-game-d5m1.onrender.com/'
+        projectURL: 'https://cegs0612.github.io/hangmangame/'
     },
     {
         title: 'Sales system',
@@ -375,7 +375,7 @@ export const projectsDataSpa = [
                 alt:"vista del juego perdido"
             },
         ],
-        projectURL: 'https://hangman-game-d5m1.onrender.com/'
+        projectURL: 'https://cegs0612.github.io/hangmangame/'
     },
     {
         title: 'Sistema de Ventas',
