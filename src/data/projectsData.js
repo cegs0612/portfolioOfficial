@@ -128,19 +128,19 @@ export const projectsDataEng = [
             },
             {
                 src:"/img/project4/p4image2.png",
-                alt:"game display"
+                alt:"game settings display"
             },
             {
                 src:"/img/project4/p4image3.png",
-                alt:"game over display"
+                alt:"game display"
             },
             {
                 src:"/img/project4/p4image4.png",
-                alt:"game over, correct answer"
+                alt:"game display"
             },
             {
                 src:"/img/project4/p4image5.png",
-                alt:"you win, answer display"
+                alt:"lost game display"
             },
         ],
         projectURL: 'https://hangman-game-d5m1.onrender.com/'
@@ -360,19 +360,19 @@ export const projectsDataSpa = [
             },
             {
                 src:"/img/project4/p4image2.png",
-                alt:"vista del juego"
+                alt:"vista de settings"
             },
             {
                 src:"/img/project4/p4image3.png",
-                alt:"vista del juego perdido"
+                alt:"vista del juego"
             },
             {
                 src:"/img/project4/p4image4.png",
-                alt:"vista del juego perdido y la respuesta correcta"
+                alt:"vista del juego"
             },
             {
                 src:"/img/project4/p4image5.png",
-                alt:"vista del juego ganado y la respuesta correcta"
+                alt:"vista del juego perdido"
             },
         ],
         projectURL: 'https://hangman-game-d5m1.onrender.com/'
